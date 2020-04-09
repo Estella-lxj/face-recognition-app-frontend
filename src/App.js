@@ -85,7 +85,7 @@ class App extends Component {
         this.state.input)
       .then(response => {
         if (response) {
-          fetch('https://git.heroku.com/fast-shore-32370.git/image', {
+          fetch('https://fast-shore-32370.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
